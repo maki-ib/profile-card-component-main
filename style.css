@@ -1,0 +1,110 @@
+body{
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans 1';
+    /* background-image: url("images/bg-pattern-bottom.svg");
+    background-image: url("images/bg-pattern-top.svg"); */
+}
+.container{
+    z-index: 2;
+    position: absolute;
+    margin: 5% 35% 0% 35%;
+}
+.card{
+    background-color: white;
+    margin-bottom: 15%;
+    border-radius: 15px;
+    color: hsl(227, 10%, 46%);
+}
+.bg-top{
+    margin-left: -30%;
+    margin-top: -40%;
+    z-index: 1;
+    position: absolute;
+}
+.bg-bottom{
+    margin-left: 56%;
+    margin-top: 18%;
+    max-height: 61%;
+    max-width: 43.4%;
+    overflow: hidden;
+    z-index: 0;
+    position: absolute;
+}
+.bg-card{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.profil{
+    border-radius: 50%;
+    border: 6px solid white;
+    margin-top: -60px;
+    margin-left: 38%;
+}
+.header{
+    text-align: center;
+    padding-bottom: 5%;
+}
+.footer{
+    padding-left: 15%;
+    padding-bottom: 5%;
+}
+.followers,.likes,.photos{
+    display: inline-block;
+    margin-right: 15%;
+
+}
+hr{
+    width: 99%;
+    background-color: hsl(0, 0%, 59%);
+}
+h4,strong{
+    font-size: 18px;
+    font-family: 'Kumbh Sans 2';
+    line-height: 0%;
+    color: hsl(229, 23%, 23%);
+}
+@font-face {
+    font-family: 'Kumbh Sans 1';
+    src: url('static/KumbhSans-Regular.ttf');
+    weight: 400;
+}
+@font-face {
+    font-family: 'Kumbh Sans 2';
+    src: url('static/KumbhSans-Regular.ttf');
+    weight: 700;
+}
+@media all and (max-width: 375px) {
+    .container{
+        margin: 30% 5% 10% 5%;
+    }
+    .bg-top{
+        margin-left: -205%;
+        margin-top: -150%;
+        z-index: 1;
+        position: absolute;
+    }
+    .bg-bottom{
+        margin-left: 30%;
+        margin-top: 70%;
+        max-height: 60%;
+        max-width: 68%;
+        overflow: hidden;
+        z-index: 0;
+        position: absolute;
+    }
+    .card{
+        background-color: white;
+        margin-bottom: 15%;
+        border-radius: 15px;
+        color: hsl(227, 10%, 46%);
+    }
+    .followers,.likes,.photos{
+        display: inline-block;
+        margin-right: 10%;
+
+    }
+    .profil{
+        margin-left: 33%;
+    }
+}
